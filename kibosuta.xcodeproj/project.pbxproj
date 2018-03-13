@@ -15,6 +15,7 @@
 		029549DC203590FB00B404DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029549DA203590FB00B404DC /* LaunchScreen.storyboard */; };
 		02BD5EE92039131D004919D8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD5EE82039131D004919D8 /* TableViewController.swift */; };
 		02DFC07620470D2C0062BBD3 /* carenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DFC07520470D2C0062BBD3 /* carenderViewController.swift */; };
+		7F7AA4C0550D5DA1302844D0 /* Pods_kibosuta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9188EC832FABCD3EC52CE2 /* Pods_kibosuta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		029549DD203590FB00B404DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02BD5EE82039131D004919D8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		02DFC07520470D2C0062BBD3 /* carenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carenderViewController.swift; sourceTree = "<group>"; };
+		5AEB26FB4C59B4E07A39D05A /* Pods-kibosuta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kibosuta.release.xcconfig"; path = "Pods/Target Support Files/Pods-kibosuta/Pods-kibosuta.release.xcconfig"; sourceTree = "<group>"; };
+		8D9188EC832FABCD3EC52CE2 /* Pods_kibosuta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kibosuta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4597FB4E3DD42C08893C98D /* Pods-kibosuta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kibosuta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kibosuta/Pods-kibosuta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7AA4C0550D5DA1302844D0 /* Pods_kibosuta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				029549CE203590FA00B404DC /* kibosuta */,
 				029549CD203590FA00B404DC /* Products */,
+				9AD4F9104EA60D228B10998D /* Pods */,
+				F0D67FDAAF1124BBB8A7CAF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,23 @@
 			path = kibosuta;
 			sourceTree = "<group>";
 		};
+		9AD4F9104EA60D228B10998D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4597FB4E3DD42C08893C98D /* Pods-kibosuta.debug.xcconfig */,
+				5AEB26FB4C59B4E07A39D05A /* Pods-kibosuta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0D67FDAAF1124BBB8A7CAF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D9188EC832FABCD3EC52CE2 /* Pods_kibosuta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 029549E0203590FB00B404DC /* Build configuration list for PBXNativeTarget "kibosuta" */;
 			buildPhases = (
+				A3B6163BC4635D00204F1929 /* [CP] Check Pods Manifest.lock */,
 				029549C8203590FA00B404DC /* Sources */,
 				029549C9203590FA00B404DC /* Frameworks */,
 				029549CA203590FA00B404DC /* Resources */,
+				9FD4A12CAF4F309C32836DAA /* [CP] Embed Pods Frameworks */,
+				2F94C2E27EA9675E8D62F864 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F94C2E27EA9675E8D62F864 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kibosuta/Pods-kibosuta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD4A12CAF4F309C32836DAA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kibosuta/Pods-kibosuta-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kibosuta/Pods-kibosuta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B6163BC4635D00204F1929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kibosuta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		029549C8203590FA00B404DC /* Sources */ = {
@@ -284,6 +365,7 @@
 		};
 		029549E1203590FB00B404DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4597FB4E3DD42C08893C98D /* Pods-kibosuta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +381,7 @@
 		};
 		029549E2203590FB00B404DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEB26FB4C59B4E07A39D05A /* Pods-kibosuta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
