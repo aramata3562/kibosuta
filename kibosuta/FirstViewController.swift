@@ -65,6 +65,8 @@ class FirstViewController: UIViewController {
 
         let res = ScanResult(hbalc: hbalcResult, tg: tgResult, hdl: hdlResult, tcho: tchoResult, ast: astResult, alt: altResult, ggtp: ggtpResult, glu: gluResult)
 
+        ScanResult.save(res: res)
+
         changeUIColor(from: res)
     }
     @IBAction func comehome (segue: UIStoryboardSegue){
@@ -164,6 +166,10 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if let res = ScanResult.loadSelf() {
+            dump(res)
+        }
     }
 }
 
