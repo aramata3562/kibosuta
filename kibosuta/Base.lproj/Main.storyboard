@@ -1016,10 +1016,10 @@
             </objects>
             <point key="canvasLocation" x="766" y="475"/>
         </scene>
-        <!--View Controller-->
+        <!--Graph View Controller-->
         <scene sceneID="e3m-dN-Vj4">
             <objects>
-                <viewController id="DM1-eG-yaJ" sceneMemberID="viewController">
+                <viewController id="DM1-eG-yaJ" customClass="GraphViewController" customModule="kibosuta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0tF-Bh-oRL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1051,10 +1051,6 @@
                                     <segue destination="1zn-IL-FPx" kind="presentation" id="4QM-Kg-Mat"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="スクリーンショット 2018-03-04 10.23.09" translatesAutoresizingMaskIntoConstraints="NO" id="8Lp-VZ-DGJ">
-                                <rect key="frame" x="1" y="203" width="375" height="231"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBY-fY-UK2">
                                 <rect key="frame" x="16" y="30" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1064,10 +1060,18 @@
                                     <segue destination="EHJ-B0-QRs" kind="unwind" unwindAction="comehomeWithSegue:" id="lfS-WY-Xda"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFD-8Q-w6c" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="1" y="181" width="375" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sqd-x5-pAt"/>
                     </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="WFD-8Q-w6c" id="gOl-lX-5AD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihm-fz-K03" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EHJ-B0-QRs" userLabel="Exit" sceneMemberID="exit"/>
@@ -1084,7 +1088,6 @@
         <image name="first" width="30" height="30"/>
         <image name="images-1" width="259" height="194"/>
         <image name="logo" width="390" height="115"/>
-        <image name="スクリーンショット 2018-03-04 10.23.09" width="850" height="772"/>
         <image name="スクリーンショット 2018-03-04 10.23.13" width="1058" height="276"/>
     </resources>
     <inferredMetricsTieBreakers>
