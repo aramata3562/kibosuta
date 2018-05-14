@@ -63,10 +63,15 @@ class FirstViewController: UIViewController {
         guard let hbalcResult = Int(hbalc.text!), let tgResult = Int(tg.text!), let hdlResult = Int(hdl.text!), let tchoResult = Int(tcho.text!),
               let astResult = Int(ast.text!), let altResult = Int(alt.text!), let ggtpResult = Int(ggtp.text!), let gluResult = Int(glu.text!) else { return }
 
-        let res = ScanResult(hbalc: hbalcResult, tg: tgResult, hdl: hdlResult, tcho: tchoResult, ast: astResult, alt: altResult, ggtp: ggtpResult, glu: gluResult)
+        let date = Date()
+        var history = ScanResult.loadHistory()
+        let res = ScanResult(date: date, hbalc: hbalcResult, tg: tgResult, hdl: hdlResult, tcho: tchoResult, ast: astResult, alt: altResult, ggtp: ggtpResult, glu: gluResult)
+        history.append(res)
+        ScanResult.save(history: history)
 
-        ScanResult.save(res: res)
 
+        let his = ScanResult.loadHistory()
+        dump(his)
         changeUIColor(from: res)
     }
     @IBAction func comehome (segue: UIStoryboardSegue){
@@ -162,14 +167,12 @@ class FirstViewController: UIViewController {
             glu.backgroundColor = UIColor.red
         }
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let res = ScanResult.loadSelf() {
-            dump(res)
-        }
+        let res = ScanResult.loadHistory()
+        dump(res)
     }
 }
 
