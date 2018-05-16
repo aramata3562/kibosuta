@@ -171,12 +171,8 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let array = ScanResult.loadHistory()
-        array.count // 件数
-
-        for result in array { //配列の中身をひとつずつとれる
-            result.hbalc
+        
         }
     }
-}
+
 

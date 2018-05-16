@@ -13,6 +13,7 @@
 		029549D7203590FB00B404DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029549D5203590FB00B404DC /* Main.storyboard */; };
 		029549D9203590FB00B404DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 029549D8203590FB00B404DC /* Assets.xcassets */; };
 		029549DC203590FB00B404DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 029549DA203590FB00B404DC /* LaunchScreen.storyboard */; };
+		02BCC5AE20AB215A006D4884 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BCC5AD20AB215A006D4884 /* HistoryViewController.swift */; };
 		02BD5EE92039131D004919D8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BD5EE82039131D004919D8 /* TableViewController.swift */; };
 		02DFC07620470D2C0062BBD3 /* carenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DFC07520470D2C0062BBD3 /* carenderViewController.swift */; };
 		6E4EEE40205E8E4E000E5517 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4EEE3F205E8E4E000E5517 /* ScanResult.swift */; };
@@ -29,6 +30,7 @@
 		029549D8203590FB00B404DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		029549DB203590FB00B404DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		029549DD203590FB00B404DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02BCC5AD20AB215A006D4884 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		02BD5EE82039131D004919D8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		02DFC07520470D2C0062BBD3 /* carenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carenderViewController.swift; sourceTree = "<group>"; };
 		5AEB26FB4C59B4E07A39D05A /* Pods-kibosuta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kibosuta.release.xcconfig"; path = "Pods/Target Support Files/Pods-kibosuta/Pods-kibosuta.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				029549D1203590FA00B404DC /* FirstViewController.swift */,
 				029549D3203590FB00B404DC /* SecondViewController.swift */,
 				029549D5203590FB00B404DC /* Main.storyboard */,
+				02BCC5AD20AB215A006D4884 /* HistoryViewController.swift */,
 				02DFC07520470D2C0062BBD3 /* carenderViewController.swift */,
 				02BD5EE82039131D004919D8 /* TableViewController.swift */,
 				029549D8203590FB00B404DC /* Assets.xcassets */,
@@ -239,6 +242,7 @@
 				6E6856912057D39700A5AA5B /* GraphViewController.swift in Sources */,
 				029549D2203590FA00B404DC /* FirstViewController.swift in Sources */,
 				02BD5EE92039131D004919D8 /* TableViewController.swift in Sources */,
+				02BCC5AE20AB215A006D4884 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
