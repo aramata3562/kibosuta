@@ -848,7 +848,7 @@
                         <outlet property="hbalcHis" destination="Cxd-iO-KBs" id="km1-2f-pP2"/>
                         <outlet property="hdlHis" destination="ZWO-OT-ln1" id="DsP-IA-SZ8"/>
                         <outlet property="tchoHis" destination="P9E-Vf-DeW" id="an1-lR-8lh"/>
-                        <outlet property="tgHIs" destination="ANb-6P-BYy" id="PoZ-n2-goT"/>
+                        <outlet property="tgHis" destination="ANb-6P-BYy" id="gZk-kS-4v2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6t-mF-HwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
