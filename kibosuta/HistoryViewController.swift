@@ -33,6 +33,17 @@ class HistoryViewController: UIViewController {
         ggtpHis.text = "\(history.first!.ggtp)"
         gluHis.text = "\(history.first!.glu)"
         
+        switch "\(history.first!.hbalc)" {
+        case …10:
+            hbalcHis.backgroundColor = UIColor.green
+        case …15:
+            hbalcHis.backgroundColor = UIColor.white
+         case ...20:
+            hbalcHis.backgroundColor = UIColor.yellow
+        default:
+            hbalcHis.backgroundColor = UIColor.red
+        }
+        
         
      
     }
@@ -40,18 +51,10 @@ class HistoryViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        
-        // Dispose of any resources that can be recreated.
+
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }

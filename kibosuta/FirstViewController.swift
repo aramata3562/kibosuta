@@ -18,14 +18,14 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var alt: UITextField!
     @IBOutlet weak var ggtp: UITextField!
     @IBOutlet weak var glu: UITextField!
-    @IBOutlet weak var hanntei: UILabel!
-    @IBOutlet weak var hanntei2: UILabel!
-    @IBOutlet weak var hanntei3: UILabel!
-    @IBOutlet weak var hanntei4: UILabel!
-    @IBOutlet weak var hanntei5: UILabel!
-    @IBOutlet weak var hanntei6: UILabel!
-    @IBOutlet weak var hanntei7: UILabel!
-    @IBOutlet weak var hanntei8: UILabel!
+//    @IBOutlet weak var hanntei: UILabel!
+//    @IBOutlet weak var hanntei2: UILabel!
+//    @IBOutlet weak var hanntei3: UILabel!
+//    @IBOutlet weak var hanntei4: UILabel!
+//    @IBOutlet weak var hanntei5: UILabel!
+//    @IBOutlet weak var hanntei6: UILabel!
+//    @IBOutlet weak var hanntei7: UILabel!
+//    @IBOutlet weak var hanntei8: UILabel!
     @IBOutlet weak var guriko: UILabel!
     @IBOutlet weak var sibou: UILabel!
     @IBOutlet weak var zenndama: UILabel!
@@ -52,14 +52,14 @@ class FirstViewController: UIViewController {
         alt.text="27"
         ggtp.text="80"
         glu.text="180"
-        hanntei.text="C"
-        hanntei2.text="A"
-        hanntei3.text="B"
-        hanntei4.text="A"
-        hanntei5.text="B"
-        hanntei6.text="C"
-        hanntei7.text="C"
-        hanntei8.text="D"
+//        hanntei.text="C"
+//        hanntei2.text="A"
+//        hanntei3.text="B"
+//        hanntei4.text="A"
+//        hanntei5.text="B"
+//        hanntei6.text="C"
+//        hanntei7.text="C"
+//        hanntei8.text="D"
         guard let hbalcResult = Int(hbalc.text!), let tgResult = Int(tg.text!), let hdlResult = Int(hdl.text!), let tchoResult = Int(tcho.text!),
               let astResult = Int(ast.text!), let altResult = Int(alt.text!), let ggtpResult = Int(ggtp.text!), let gluResult = Int(glu.text!) else { return }
 
